@@ -1,18 +1,70 @@
-table { 
-		border-collapse: collapse;
-		height: 800px;
-		width: 100px;
-		width: 100%;
-		
-	}
-tr {
-	border: 2px solid black;
-		width: 100px;
-		height: 100px;
+body {
+	background-image: url("earth.jpg");
+}
+
+.cell {
+    width: 150px;
+    height: 150px;
+    font: 90px sans-serif;
+    text-align: center;
+    vertical-align: center;
+    border-collapse: collapse;
+}
+
+ h1 {
+ 	text-align: center;
+ 	font-size: 40px;
+ 	font-family: cursive;
+ 	color: teal;
+ }
+
+ h2 {
+
+ 	font-size: 30px;
+ 	font-family: cursive;
+ 	color: teal;
+
+ }
+
+ table {
+ 	margin-left: 200px;
+ 	border-collapse: collapse;
+ 	border: 2px solid white;
+ 	margin-bottom: 50px;
+ }
+
+ h3 {
+ 	color: teal;
+ 	font-size: 25px;
+ 	font-family: cursive;
+ }
+
+
+ h3 input  {
+	height: 30px;
+	width: 100px;
+	color: red;
+	background-color: yellow;
+	font-size: 15px;
 
 }
-th {
-	border: 2px solid black;
-		width: 100px;
-		height: 100px;
+
+
+img {
+	height: 70px;
 }
+
+.style {
+	color: teal;
+	
+}
+
+
+
+
+
+
+
+
+
+

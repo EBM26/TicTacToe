@@ -9,6 +9,7 @@ body {
     text-align: center;
     vertical-align: center;
     border-collapse: collapse;
+    color: teal;
 }
 
  h1 {
@@ -16,6 +17,7 @@ body {
  	font-size: 40px;
  	font-family: cursive;
  	color: teal;
+ 	text-decoration: underline;
  }
 
  h2 {
@@ -54,9 +56,10 @@ img {
 	height: 70px;
 }
 
-.style {
-	color: teal;
-	
+
+
+h2 input {
+	height 100px;
 }
 
 

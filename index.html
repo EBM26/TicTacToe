@@ -3,6 +3,8 @@
 <head>
    <meta charset="UTF-8">
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+   <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+   <script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
    <script src="app.js"></script>
    <link rel="stylesheet" href="style.css">
    <title>Tic Tac Toe</title>
@@ -11,10 +13,10 @@
  <h1>Tic Tac Toe Planet</h1><br>
  <h2>Please select planet:
    <label>
-      <input type="radio" value="O" ng-model="player"/><img src="uranus.jpg">Uranus
+      <input type="radio" value="O" ng-model="player"/><img src="uranus.jpg">Planet O
    </label>
    <label>
-   <input type="radio" value="X" ng-model="player" value="clear board"/><img src="saturn.jpg">Saturn
+   <input type="radio" value="X" ng-model="player" value="clear board"/><img src="saturn.jpg">Planet X
    </label>
 </h2>
 <h3 ng-show="currentPlayer == player">Your Turn</h3>
@@ -22,7 +24,7 @@
 <h3 ng-show="winner">WINNER IS {{winner}}!! <input type="button" ng-click="newGame()" value="New Game" /></h3>
 <table border="1">
    <tr ng-repeat="row in [0,1,2]">
-     <td ng-repeat="column in [0,1,2]" class="style" ng-click="cellClick(row,column)" ng-class="cellClass(row,column)">{{cellText(row,column)}}</td>
+     <td ng-repeat="column in [0,1,2]" ng-click="cellClick(row,column)" ng-class="cellClass(row,column)">{{cellText(row,column)}}</td>
   </tr>
 </table>
 </body>

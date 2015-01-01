@@ -14,7 +14,7 @@ function gameController($scope, $firebase)
   
 
    // setting function getGame equal to $scope.game in order to sync firebase to the game
-   //  and creating an empty array
+   
    $scope.game = getGame();
   
 
@@ -32,6 +32,7 @@ function gameController($scope, $firebase)
   }
 
   // initialization code. Checks if we need player two then assigns player accordingly
+  // also creates empty array to move to 
   $scope.game.$loaded().then(function() {
         if($scope.game.iAmPlayerTwo){
             $scope.player = 'X';
@@ -76,14 +77,14 @@ function gameController($scope, $firebase)
    		alert('Wait your turn!');
    		return;
    	}
-
+    // boolean that check if space is taken 
     if ($scope.game.board[row][column] != ''){
       alert('Space taken')
       return
     }
 
-   	// set the value of the cell based on the current player, check winning conditions, set current
-   	// player to next player (calling three different functions)
+   	// Calling three different functions: set the value of the cell based on the current player, 
+   	// check winning conditions, set current player to next player 
    	setCell(row, column, $scope.player);
 
     checkBoard();
@@ -92,7 +93,7 @@ function gameController($scope, $firebase)
   }
 
 
-       // function that resets the game to new and everything into ''
+    // function that resets the game to new and everything into ''
        $scope.newGame = function () {
        	for (var i = 0; i < 3; i++) {
        		for (var j = 0; j < 3; j++) {
@@ -108,7 +109,7 @@ function gameController($scope, $firebase)
  // function that sets the value of cell by setting value equal to "board" array 
  function setCell(row, column, value) {
  	$scope.game.board[row][column] = value;
-   $scope.game.$save();
+  $scope.game.$save();
 
  }
  // function that returns the value of the next player to play 
@@ -160,7 +161,7 @@ function gameController($scope, $firebase)
   		winner = cell(0, 2)
   	}
 
-	// is there a winner, set the winner's name to the winner global var
+	// if there is a winner, set the winner's name to the winner global var
   if (winner) 
   {
     $scope.winner = winner

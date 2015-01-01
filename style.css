@@ -62,8 +62,16 @@ h2 input {
 	height 100px;
 }
 
+#winner {
+	color: yellow;
+}
 
-
+#wait {
+	color: silver;
+}
+ #turn {
+ 	color: orange;
+ }
 
 
 

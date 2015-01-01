@@ -19,9 +19,9 @@
    <input type="radio" value="X" ng-model="player" value="clear board"/><img src="saturn.jpg">Planet X
    </label>
 </h2>
-<h3 ng-show="currentPlayer == player">Your Turn</h3>
-<h3 ng-show="currentPlayer != player">Waiting for Opponent</h3>
-<h3 ng-show="winner">WINNER IS {{winner}}!! <input type="button" ng-click="newGame()" value="New Game" /></h3>
+<h3 id='turn' ng-show="currentPlayer == player">Your Turn</h3>
+<h3 id='wait' ng-show="currentPlayer != player">Waiting for Opponent</h3>
+<h3 id="winner" ng-show="winner">WINNER IS {{winner}}!! <input type="button" ng-click="newGame()" value="New Game" /></h3>
 <table border="1">
    <tr ng-repeat="row in [0,1,2]">
      <td ng-repeat="column in [0,1,2]" ng-click="cellClick(row,column)" ng-class="cellClass(row,column)">{{cellText(row,column)}}</td>

@@ -1,5 +1,5 @@
 body {
-	background-image: url("earth.jpg");
+	background-image: url("earth.jpg") ;
 }
 
 .cell {
@@ -9,30 +9,38 @@ body {
     text-align: center;
     vertical-align: center;
     border-collapse: collapse;
-    color: teal;
+    color: red;
+    text-shadow: 2px 2px 0px yellow;
 }
 
  h1 {
  	text-align: center;
  	font-size: 40px;
  	font-family: cursive;
- 	color: teal;
+ 	color: #B258EF;
  	text-decoration: underline;
+ 	text-shadow: 2px 2px 0px yellow;
+ 	
  }
 
  h2 {
 
  	font-size: 30px;
  	font-family: cursive;
- 	color: teal;
+ 	color: #00E59F;
 
  }
+
+  input[type=radio] {
+  ;
+}
 
  table {
  	margin-left: 200px;
  	border-collapse: collapse;
- 	border: 2px solid white;
+ 	border: 2px solid gold;
  	margin-bottom: 50px;
+ 	box-shadow: 0 0 20px red;
  }
 
  h3 {
@@ -48,34 +56,79 @@ body {
 	color: red;
 	background-color: yellow;
 	font-size: 15px;
+	font-family: cursive;
+	text-shadow: 1px 1px 0px #98E1F3;
+
 
 }
 
 
-img {
+.peice {
 	height: 70px;
+	opacity: 0.8;
+	 
 }
 
 
 
 h2 input {
 	height 100px;
+
 }
 
 #winner {
 	color: yellow;
+	text-shadow: 2px 2px 0px #98E1F3;
+
 }
 
 #wait {
 	color: silver;
+	text-shadow: 1px 1px 0px red;
 }
  #turn {
  	color: orange;
  }
+#ship {
+	height:170px;
+	width: 230px;
+	position: absolute;
+	top: 10px;
+	opacity: 0.7;
+}
 
 
+#shipThree {
+	height:160px;
+	width: 250px;
+	position: absolute;
+	bottom: 60px;
+	right: 60px;
+	opacity: 0.5;
+}
 
+#boom {
+	height: 160px;
+	width: 160px;
+	position: absolute;
+	bottom: 150px;
+	opacity: 0.8;
+}
 
+#planet {
+	position: absolute;
+	top: 10px;
+	right: 1px;
+	height: 200px;
+	width: 320px;
+	opacity: 0.8;
+}
 
-
+#moon {
+	position: absolute;
+	top: 10px;
+	left: 350px;
+	height: 140px;
+	width: 160px;
+}
 

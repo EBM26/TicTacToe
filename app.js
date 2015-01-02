@@ -79,7 +79,7 @@ function gameController($scope, $firebase)
    	}
     // boolean that check if space is taken 
     if ($scope.game.board[row][column] != ''){
-      alert('Space taken')
+      alert('Planet already taken!')
       return
     }
 

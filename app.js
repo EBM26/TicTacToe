@@ -63,7 +63,7 @@ function gameController($scope, $firebase)
 		var value = cell(row, column);
 		return value ? value : '?';
 	}
-   // function that checks when you click on it (via ng-click) if there is already a 
+   // function that checks when y ou click on it (via ng-click) if there is already a 
    // winner and alerts that there is already a winner
    $scope.cellClick = function (row, column) {
    	if ($scope.winner) {
@@ -117,12 +117,10 @@ function gameController($scope, $firebase)
  {
   console.log(player);
  	if(player == 'X'){
-    console.log('O')
  		return 'O';
  	}
 
  	if(player == 'O'){
-    console.log('X')
  		return 'X';
  	}
  	
